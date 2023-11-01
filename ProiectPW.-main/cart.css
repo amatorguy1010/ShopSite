@@ -1,0 +1,40 @@
+#cart-items img{
+    height: 40px;
+}
+
+#cart-items {
+    padding: 20px;
+}
+
+#cart-items .cart-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#total {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px;
+}
+button {
+    background-color: rgb(24, 61, 61);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+p{
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px;
+}
+/*Cart*/
+
+#cart{
+    background-image: url(poze/cart.jpg);
+    background-position: 10px ;
+ }

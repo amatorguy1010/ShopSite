@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <style>
+        /* Stilizare pentru corpul paginii */
+
+
+/* Stilizare pentru containerul formularului */
+h1 {
+    
+    margin: 20px;
+    color: #333;
+}
+
+form {
+    width: 400px;
+    margin:20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilizare pentru etichetele și câmpurile de input */
+label {
+    display: block;
+    margin: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Stilizare pentru butonul de trimitere */
+input[type="submit"] {
+    background-color: rgb(24, 61, 61);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(21, 49, 49);
+}
+
+/* Stilizare pentru mesajul de confirmare */
+.message {
+    text-align: center;
+    margin: 20px;
+    color: green;
+}
+#cart-items img{
+    height: 40px;
+}
+
+#cart-items {
+    padding: 20px;
+}
+
+#cart-items .cart-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#total {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px;
+}
+button {
+    background-color: rgb(24, 61, 61);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+p{
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px;
+}
+/*Cart*/
+
+#cart{
+    background-image: url(poze/cart.jpg);
+    background-position: 10px ;
+ }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <section class="header"> 
+
+        <a href="#"><img class="logo" src="poze/facebook_cover_photo_2.png" alt="logo image" width="250" height="100"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index_clienti.html">Home</a></li>
+                <li><a href="shop_client.html">Shop</a></li>
+                <li><a href="about_client.html">About us</a></li>
+                <li><a href="contact_client.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart_client.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div class="responsive">
+            
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+           
+        </div>
+
+    </section>
+
+    <!-- Main Section -->
+
+    <section class="page-main contact-header" id="cart">
+
+        
+        
+        <h1>#Your Cart</h1>
+        <p>Buy today from our shop!</p>
+       
+
+    </section>
+
+    
+    <div id="cart-items">
+        <!-- Aici vor fi afișate produsele din coș -->
+        
+    </div>
+    <p>Totalul din coș: <span id="total">0.00</span></p>
+    <button onclick=" document.location.reload();clearCart()">Șterge Coș</button> <!-- Buton pentru ștergerea întregului coș -->
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <form action="proceseaza_checkout.php" method="post">
+        <label for="nume">Nume:</label>
+        <input type="text" name="nume" required><br>
+
+        <label for="adresa">Adresa:</label>
+        <input type="text" name="adresa" required><br>
+
+        <input type="submit" value="Finalizeaza comanda">
+    </form>
+</body>
+</html>
+
+
+    <footer>
+        <div class="col">
+            <img src="poze/facebook_cover_photo_2.png" width="200">
+            <h4>Contact</h4>
+            <p><b>Adress: </b> Aleea Ripensia , nr.33, Timisoara</p>
+            <p><b>Phone:</b> 0751 890 995</p>
+            <p><b>Program:</b> 9:00-17:00, Monday-Friday</p>
+            <h4>Follow Us</h4>
+            <div class="media">
+
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="">About Us</a>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="">My Account</a>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Wishlist</a>
+            <a href="">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>Form App Store or Google Play</p>
+            <div class="cards">
+                <img src="poze/app.jpg" alt="">
+                <img src="poze/play.jpg" alt="">
+            </div>
+                <p>Secured Payments</p>
+                <img src="poze/pay.png" alt="">
+            
+        </div>
+    </footer>
+
+
+ <script src="cart.js"></script>  
+ <script>
+    function clearCart() {
+            localStorage.setItem('total',0);
+            localStorage.removeItem('cart');
+            updateCartUI();
+            
+        }
+ </script>
+ 
+</body>
+</html>

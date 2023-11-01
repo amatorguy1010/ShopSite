@@ -1,0 +1,93 @@
+*{
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   
+}
+
+section{
+   padding:2rem;
+}
+
+.heading{
+   text-align: center;
+   font-size: 3.5rem;
+   text-transform: uppercase;
+   color:#333;
+   margin-bottom: 2rem;
+}
+
+.products .box-container{
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 20px;
+   flex-wrap: nowrap;
+   gap: 100px;
+}
+
+.products .box-container .box{
+   width: 19%;
+   height: 500px;
+   min-width: 250px;
+   padding: 15px 12px;
+   border: 1px solid rgb(147, 177, 166);
+   border-radius: 25px;
+   cursor: pointer;
+   box-shadow: 20px 20px 30px rgba(188, 224, 196, 0.1);
+   margin: 15px 0px;
+   position: relative;
+}
+.products .box-container .box:hover{
+   box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+   transition: 0.4s;
+}
+
+.products .box-container .box img{
+   width: 100%;
+   border-radius: 20px;
+   padding: 20px;
+}
+
+.products .box-container .box h3{
+   padding-top: 27px;
+   color: rgb(24, 61, 61);
+   font-size: 25px;
+}
+
+.products .box-container .box .price{
+   padding-top: 17px;
+   font-size: 25px;
+   font-weight:700;
+   color: rgb(24, 61, 61);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
